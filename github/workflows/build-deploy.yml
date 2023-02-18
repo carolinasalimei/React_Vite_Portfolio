@@ -1,17 +1,20 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
-branches:
--"master"
+name:  React App Github Deploy
+
+on: 
+  push:
+
+       branches:
+          -"master"
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
+  
+    build-on: ubuntu-latest
+
+
     steps:
       - name: Checkout
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
+   
+       
       - name: Install & build   
       - run: npm install npm run build
       
