@@ -1,0 +1,99 @@
+
+.feed {
+    background: #121527;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+  }
+.title1{
+    color: yellow;
+    font-size: 2rem;
+  
+    position: relative;
+    top: 0;
+    left: 400px;
+}
+
+
+  .cards {
+    display: inline-block;
+
+    margin: 15px 12px;
+    cursor: pointer;
+  }
+.boxes {
+    background-color: #327AEB;
+    width: 250px;
+    height: 50vh;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+
+.feed  .cards:hover {
+    background: crimson;
+}
+
+.feed  .cards .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feed  .cards:hover .boxes {
+    transform: scale(1.05);
+}
+
+.feed .carousel .cards .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.feed  .cards img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.feed  .cards:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid crimson !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: crimson !important;
+}
