@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh_pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/react_vite_portfolio",
     "preview": "vite preview"
   },
   "dependencies": {
