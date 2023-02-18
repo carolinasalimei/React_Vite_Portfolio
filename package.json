@@ -7,7 +7,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc && vite build --base=/react_vite_portfolio/",
+    "build": "vite build --base=/react_vite_portfolio",
     "preview": "vite preview"
   },
   "dependencies": {
